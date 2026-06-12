@@ -5,21 +5,21 @@
 class BrewGoDemo < Formula
   desc "A minimal Go CLI for testing GoReleaser and Homebrew tap distribution."
   homepage "https://github.com/jasony87/brew-go-demo"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.0.1/brew-go-demo_darwin_amd64.tar.gz"
-      sha256 "d0308d988560a1e1ca53cf8ddda0473ed6d4dabae02bd742573957cf050d6461"
+      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.1.0/brew-go-demo_darwin_amd64.tar.gz"
+      sha256 "a47352b9f517f286fe342fb372025c8311142bde19c5f815209c9a5f1a6b48b3"
 
       define_method(:install) do
         bin.install "brew-go-demo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.0.1/brew-go-demo_darwin_arm64.tar.gz"
-      sha256 "d6e7dbb5df4d9f6d839e27cb4af4ce88f7e9780b097721e27658e13c91342714"
+      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.1.0/brew-go-demo_darwin_arm64.tar.gz"
+      sha256 "20c5fc85e09df245146b1bbf401ae93c5aa2c049b85069249d65d3b3138d8815"
 
       define_method(:install) do
         bin.install "brew-go-demo"
@@ -29,15 +29,15 @@ class BrewGoDemo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.0.1/brew-go-demo_linux_amd64.tar.gz"
-      sha256 "1024b0903687d62c5e555c968afbd63b3ead81be7d7fe6faf89f75bd8a425bb6"
+      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.1.0/brew-go-demo_linux_amd64.tar.gz"
+      sha256 "b86e4c4f99e392bf7e052026e59eb162f0abdf03174ec8c04c5d746be1366cde"
       define_method(:install) do
         bin.install "brew-go-demo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.0.1/brew-go-demo_linux_arm64.tar.gz"
-      sha256 "baa15d06aa01010a9bfe8451da7134a3703582c636e44d91ca7668863c9fcdb2"
+      url "https://github.com/jasony87/brew-go-demo/releases/download/v0.1.0/brew-go-demo_linux_arm64.tar.gz"
+      sha256 "4df8bdbe6eb02f17bf20a2d3a544e73fc372b5804f00ad59d070ad5db00b3af1"
       define_method(:install) do
         bin.install "brew-go-demo"
       end
